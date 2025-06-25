@@ -9,8 +9,8 @@
     "typescript": "^5.0.0"
   },
   "scripts": {
-    "show:affected": "pnpm nx show projects --affected --base=origin/main",
-    "gen:changeset": "nx affected --target=version --parallel=3",
+    "show:affected": "nx show projects --affected --base=origin/main",
+    "gen:changeset": "nx affected --target=version --parallel=1 -- --skip-git",
     "changeset": "changeset",
     "version-packages": "changeset version",
     "publish-packages": "changeset publish"
