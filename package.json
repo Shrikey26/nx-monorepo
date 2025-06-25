@@ -3,13 +3,14 @@
   "private": true,
   "devDependencies": {
     "@changesets/cli": "^2.0.0",
+    "@jscutlery/semver": "^5.6.0",
     "@nx/js": "^18.0.0",
     "nx": "^18.0.0",
     "typescript": "^5.0.0"
   },
   "scripts": {
     "show:affected": "pnpm nx show projects --affected --base=origin/main",
-    "gen:changeset": "node scripts/gen-changeset.js",
+    "gen:changeset": "nx affected --target=version --parallel=3",
     "changeset": "changeset",
     "version-packages": "changeset version",
     "publish-packages": "changeset publish"
