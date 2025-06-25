@@ -1,0 +1,20 @@
+{
+  "npmScope": "nxmonorepo",
+  "affected": {
+    "defaultBase": "main"
+  },
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "nx/tasks-runners/default",
+      "options": {
+        "cacheableOperations": ["build", "lint", "test"]
+      }
+    }
+  },
+  "projects": {
+    "workspace-a": "packages/workspace-a",
+    "workspace-b": "packages/workspace-b",
+    "workspace-c": "packages/workspace-c",
+    "common": "common"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "name": "common",
+  "projectType": "library",
+  "root": "common",
+  "sourceRoot": "common",
+  "targets": {}
+}

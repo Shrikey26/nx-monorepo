@@ -1,1 +1,1 @@
-import { Shared2 } from '../../../common/shared2'; console.log(Shared2());
+console.log(`Just C,No sharing`);

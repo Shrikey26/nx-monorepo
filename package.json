@@ -1,7 +1,6 @@
 {
   "name": "nx-monorepo",
   "private": true,
-  "workspaces": ["packages/*"],
   "devDependencies": {
     "@changesets/cli": "^2.0.0",
     "@nx/js": "^18.0.0",
@@ -9,7 +8,7 @@
     "typescript": "^5.0.0"
   },
   "scripts": {
-    "show:affected": "pnpm nx show projects --affected --files",
+    "show:affected": "pnpm nx show projects --affected --base=origin/main",
     "gen:changeset": "node scripts/gen-changeset.js",
     "changeset": "changeset",
     "version-packages": "changeset version",
