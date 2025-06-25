@@ -10,7 +10,7 @@
   },
   "scripts": {
     "show:affected": "nx show projects --affected --base=origin/main",
-    "gen:changeset": "nx affected --target=version --skip-git --parallel=1",
+    "gen:changeset": "nx affected --target=version --skip-git --parallel=1 --base=HEAD~1 --head=HEAD",
     "changeset": "changeset",
     "version-packages": "changeset version",
     "publish-packages": "changeset publish"
